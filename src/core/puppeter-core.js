@@ -13,7 +13,8 @@ export class PuppeterCore {
     logger.info(`Initializing Puppeter Browser`);
     const url = "https://discord.com/login";
     this.browser = await puppeteer.launch({
-      channel: "chrome",
+      channel: "chrome", //'chrome' | 'chrome-beta' | 'chrome-canary' | 'chrome-dev'
+      executablePath: process.env.BROWSEREXECUTABLEPATH ?? null,
       headless: process.env.HEADLESS == 1,
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });

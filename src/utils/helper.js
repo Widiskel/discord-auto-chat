@@ -9,7 +9,7 @@ export class Helper {
     return new Promise((resolve) => setTimeout(resolve, ms));
   };
 
-  static symbols = ["!", ".", ",", "  ", ", Lets Go !", "'", "'.'", "~"];
+  static symbols = ["!", ".", ",", "  "];
 
   static getRandomMessage = () => {
     const selectedText = MESSAGELIST[Helper.random(0, MESSAGELIST.length - 1)];
