@@ -24,7 +24,7 @@ auto send chat on discord specific channel, good for push rank level on MEE bot 
    TARGET_CHAT_CHANNEL=https://discord.com/channels/123123/123123123
    DELAY_EACH_CHAT_IN_SECONDS=70
    HEADLESS=1 for ON 0 for OFF
-   BROWSEREXECUTABLEPATH=/path/to/chrome
+   BROWSEREXECUTABLEPATH=/path/to/chrome.exe or chrome(bin) you can leave it blank to set it to default path
    ```
 5. Run Bot
    ```bash
